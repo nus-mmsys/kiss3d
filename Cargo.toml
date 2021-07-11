@@ -46,7 +46,7 @@ serde_derive = "1"
 rusttype     = { version = "0.8", features = [ "gpu_cache" ] }
 instant      = { version = "0.1", features = [ "wasm-bindgen" ]}
 conrod_core  = { version = "0.71", features = [ "wasm-bindgen" ], optional = true }
-glow = { git = "https://github.com/nus-mmsys/glow", version = "0.10.0" }
+glow = { git = "https://github.com/nus-mmsys/glow", version = "0.10.0", branch = "main" }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 glutin = "0.26"
