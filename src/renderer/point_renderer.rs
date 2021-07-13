@@ -75,6 +75,7 @@ impl Renderer for PointRenderer {
         self.pos.bind_sub_buffer(&mut self.points, 1, 0);
 
         let ctxt = Context::get();
+        verify!(ctxt.enable(Context::PROGRAM_POINT_SIZE));
         verify!(ctxt.point_size(self.point_size));
         verify!(ctxt.draw_arrays(Context::POINTS, 0, (self.points.len() / 2) as i32));
 
