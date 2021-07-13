@@ -222,6 +222,12 @@ impl Window {
     pub fn draw_point(&mut self, pt: &Point3<f32>, color: &Point3<f32>) {
         self.point_renderer.draw_point(*pt, *color);
     }
+    
+    /// Adds a point to be drawn during the next frame.
+    #[inline]
+    pub fn draw_point_with_size(&mut self, pt: &Point3<f32>, color: &Point3<f32>, size: f32) {
+        self.point_renderer.draw_point_with_size(*pt, *color, size);
+    }
 
     /// Adds a string to be drawn during the next frame.
     #[inline]
