@@ -101,6 +101,7 @@ const A_VERY_LONG_STRING: &'static str = "#version 100
     uniform   mat4 view;
     void main() {
         gl_Position = proj * view * vec4(position, 1.0);
+        gl_PointSize = gl_Position.z * 5.0;
         Color = color;
     }";
 
