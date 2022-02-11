@@ -72,7 +72,7 @@ pub struct Window {
     background: Vector3<f32>,
     line_renderer: LineRenderer,
     planar_line_renderer: PlanarLineRenderer,
-    point_renderer: PointRenderer,
+    pub point_renderer: PointRenderer,
     text_renderer: TextRenderer,
     framebuffer_manager: FramebufferManager,
     post_process_render_target: RenderTarget,

@@ -17,8 +17,8 @@ pub struct PointRenderer {
     size: ShaderAttribute<f32>,
     proj: ShaderUniform<Matrix4<f32>>,
     view: ShaderUniform<Matrix4<f32>>,
-    points: GPUVec<Point3<f32>>,
-    sizes: GPUVec<f32>,
+    pub points: GPUVec<Point3<f32>>,
+    pub sizes: GPUVec<f32>,
     point_size: f32,
 }
 
